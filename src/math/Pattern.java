@@ -9,11 +9,33 @@ public class Pattern {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 *
 		 */
-		
-
-		
-		
-		
-
+		int pt = 0;
+		for (int i = 100; i >= 0; i--) {
+			pt++;
+			if (pt <= 10) {
+				System.out.println(i + " ");
+			} else {
+				for (i = 90; i >= 0; i -= 2) {
+					if (pt >= 10 && pt <= 20) {
+						System.out.println(i + " ");
+						pt++;
+					} else {
+						for (i = 70; i >= 0; i -= 3) {
+							if (pt >= 20 && pt <= 30) {
+								System.out.println(i + " ");
+								pt++;
+							} else {
+								for (i = 40; i >= 0; i -= 4) {
+									if (pt > 30 && pt <= 40) {
+										System.out.println(i + " ");
+										pt++;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

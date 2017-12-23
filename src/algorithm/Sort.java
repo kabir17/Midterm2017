@@ -35,8 +35,6 @@ public class Sort {
         int [] list = array;
         //implement here
 
-
-
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -46,24 +44,43 @@ public class Sort {
     public int[] bubbleSort(int [] array){
         int [] list = array;
         //implement here
-        
-        
-        
-        
-        
-        
+
+        final long startTime = System.currentTimeMillis();
+
+        //implement here
+                       int temp;
+             for (int i = 0; i < array.length; i++) {
+                      for (int j = 1; j < array.length - i; j++) {
+                          if (array[j - 1] > array[j]) {
+                                       temp = array[j - 1];
+                                        array[j - 1] = array[j];
+                                        array[j] = temp;
+                                    }
+                           }
+                 }
+             final long endTime = System.currentTimeMillis();
+                final long executionTime = endTime - startTime;
+                this.executionTime = executionTime;
         return list;
     }
+
     
 
     public int [] mergeSort(int [] array){
         int [] list = array;
         //implement here
-        
-        
 
+        final long startTime = System.currentTimeMillis();
+
+        //implement here
+                        final long endTime = System.currentTimeMillis();
+                final long executionTime = endTime - startTime;
+                this.executionTime = executionTime;
         return list;
     }
+
+
+
     
 
     public int [] quickSort(int [] array){

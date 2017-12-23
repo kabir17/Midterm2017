@@ -94,7 +94,7 @@ public class ConnectDB {
         return dataList;
     }
 
-    public void InsertDataFromArryToMySql(int [] ArrayData,String tableName, String columnName)
+    public void DaInserttaFromArryToMySql(int [] ArrayData,String tableName, String columnName)
     {
         try {
             connectToMySql();
@@ -262,4 +262,6 @@ public class ConnectDB {
 
     }
 
+    public void InsertDataFromArryToMySql(int[] num, String selection_sort, String sortingNumbers) {
+    }
 }
